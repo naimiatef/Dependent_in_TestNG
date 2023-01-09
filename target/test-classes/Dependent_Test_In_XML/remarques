@@ -1,0 +1,15 @@
+Dans cette section, nous allons déplacer nos commandes de dépendance vers le fichier XML.
+
+
+dans le fichier run.xml :
+	- Dans la balise « dependencies », j’ai créé le flux de groupes que je veux exécuter. Il y a un total de trois composants dans chaque dépendance que j’ai créée.
+
+	- <group> - La balise que vous devez spécifier pour indiquer à XML que nous parlons des groupes.
+
+	- depends-on -* Nom du groupe dont vous souhaitez que ce groupe dépende*.
+
+	- name: nom du groupe dont vous souhaitez dépendre.
+
+	- <group depends-on = "***openbrowser***" name = "***login***"></group>
+
+	- Le code ci-dessus indique que le groupe nommé « login » doit dépendre du groupe portant le nom « openbrowser ».
